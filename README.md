@@ -1,1 +1,1 @@
-https://fizcount.github.io/learn-HTML/
+https://fizcount.github.io/Fizc-Learn-HTML/
