@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Efek Warna-warni</title>
+    <title>Document</title>
     <style>
         .rainbow-text {
             font-size: 2em;
@@ -11,11 +11,9 @@
             transition: color 0.5s ease;
             display: inline-block;
         }
-
         .rainbow-text:hover {
             animation: rainbow 1s infinite;
         }
-
         @keyframes rainbow {
             0% { color: red; }
             14% { color: orange; }
@@ -26,11 +24,26 @@
             85% { color: violet; }
             100% { color: red; }
         }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Mengatur tinggi untuk memusatkan teks */
+            background-color: #f0f0f0; /* Warna latar belakang yang lembut */
+            font-family: 'Arial', sans-serif; /* Mengatur font */
+        }
+        h1 {
+            font-size: 5em; /* Ukuran font yang besar */
+            color: #4A90E2; /* Warna teks yang menarik */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Bayangan teks */
+            transition: transform 0.3s; /* Efek transisi */
+        }
+        h1:hover {
+            transform: scale(1.1); /* Efek zoom saat hover */
+        }
     </style>
 </head>
 <body>
-
-    <h1 class="rainbow-text">Arahkan Cursor ke Teks Ini!</h1>
-
+    <h1>Hello World of War</h1>
 </body>
 </html>
