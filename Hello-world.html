@@ -9,6 +9,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+<<<<<<< HEAD
             height: 100vh;
             background-color: #f0f0f0;
             font-family: 'Arial', sans-serif;
@@ -20,6 +21,17 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s, color 0.3s;
             cursor: pointer;
+=======
+            height: 100vh; /* Mengatur tinggi untuk memusatkan teks */
+            background-color: #f0f0f0; /* Warna latar belakang yang lembut */
+            font-family: 'Arial', sans-serif; /* Mengatur font */
+        }
+        h1 {
+            font-size: 5em; /* Ukuran font yang besar */
+            color: #4A90E2; /* Warna teks yang menarik */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Bayangan teks */
+            transition: transform 0.3s, color 0.3s; /* Efek transisi */
+>>>>>>> 96cd2193fd054d01025d5d9d563cb5728d8ae9b4
         }
         
         @keyframes rainbow {
@@ -34,6 +46,7 @@
         }
 
         h1:hover {
+<<<<<<< HEAD
             transform: scale(1.1);
             animation: rainbow 1s infinite;
         }
@@ -47,10 +60,15 @@
         @keyframes fall {
             0% { transform: translateY(0); }
             100% { transform: translateY(100vh); opacity: 0; }
+=======
+            transform: scale(1.1); /* Efek zoom saat hover */
+            animation: rainbow 1s infinite; /* Mengaktifkan animasi warna-warni */
+>>>>>>> 96cd2193fd054d01025d5d9d563cb5728d8ae9b4
         }
     </style>
 </head>
 <body>
+<<<<<<< HEAD
     <h1 id="text">Hello World of War</h1>
     <audio id="click-sound" src="click-sound.mp3" preload="auto"></audio> <!-- Ganti dengan path suara yang sesuai -->
 
@@ -72,5 +90,8 @@
             document.body.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 80%)`;
         });
     </script>
+=======
+    <h1>Hello World of War</h1>
+>>>>>>> 96cd2193fd054d01025d5d9d563cb5728d8ae9b4
 </body>
 </html>
