@@ -5,25 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .rainbow-text {
-            font-size: 2em;
-            font-weight: bold;
-            transition: color 0.5s ease;
-            display: inline-block;
-        }
-        .rainbow-text:hover {
-            animation: rainbow 1s infinite;
-        }
-        @keyframes rainbow {
-            0% { color: red; }
-            14% { color: orange; }
-            28% { color: yellow; }
-            42% { color: green; }
-            57% { color: blue; }
-            71% { color: indigo; }
-            85% { color: violet; }
-            100% { color: red; }
-        }
         body {
             display: flex;
             justify-content: center;
@@ -36,10 +17,23 @@
             font-size: 5em; /* Ukuran font yang besar */
             color: #4A90E2; /* Warna teks yang menarik */
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Bayangan teks */
-            transition: transform 0.3s; /* Efek transisi */
+            transition: transform 0.3s, color 0.3s; /* Efek transisi */
         }
+        
+        @keyframes rainbow {
+            0% { color: #4A90E2; }
+            14% { color: #E94E77; }
+            28% { color: #F9C80E; }
+            42% { color: #4CAF50; }
+            57% { color: #00BCD4; }
+            71% { color: #9C27B0; }
+            85% { color: #FF9800; }
+            100% { color: #4A90E2; }
+        }
+
         h1:hover {
             transform: scale(1.1); /* Efek zoom saat hover */
+            animation: rainbow 1s infinite; /* Mengaktifkan animasi warna-warni */
         }
     </style>
 </head>
